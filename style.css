@@ -1,0 +1,447 @@
+:root {
+    --cor-primaria: #606C38;
+    --cor-secundaria: #DDA15E;
+    --cor-fundo: #FEFAE0;
+    --cor-texto: #283618;
+    --footer-hover: #BC6C25;
+}
+
+/* Estilizações Gerais */
+
+* {
+    text-decoration: none;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+a {
+    font-weight: 500;
+}
+
+
+
+/* Estilização do Body */
+
+body {
+    background-color: var(--cor-fundo);
+
+}
+
+
+/* Estilização do Header ~ Julio Moreira */
+
+section {
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header {
+    background-color: var(--cor-primaria);
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    border-bottom: 4px solid var(--cor-secundaria);
+    height: auto;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    max-height: 96px;
+
+}
+
+.header img {
+    max-width: 192px;
+    width: 100%;
+    height: auto;
+}
+
+.header nav {
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    color: var(--cor-secundaria);
+    font-size: 16px;
+}
+
+.header a:hover {
+    color: var(--cor-fundo);
+    transition: 0.4s linear;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    transform: scale(1.05);
+}
+
+/* Final Estilização Header ~ Julio Moreira */
+
+/* Estilização do Hero ~ Julio Moreira */
+
+.hero {
+    padding-top: 96px;
+}
+
+.hero h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--footer-hover);
+}
+
+.hero img {
+    max-width: 1216px;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    border-radius: 16px;
+}
+
+.hero video {
+    max-width: 1216px;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    border-radius: 16px;
+}
+
+
+.hero p {
+    text-align: justify;
+}
+
+.hero hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 1px;
+    background-color: var(--cor-primaria);
+    border: none;
+
+}
+
+.ingredients hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 1px;
+    background-color: var(--cor-primaria);
+    border: none;
+
+}
+
+
+/* Final Estilização Hero ~ Julio Moreira */
+
+/* Inicio Estilização das Receitas */
+
+.main h1 {
+    margin-bottom: 32px;
+    color: #BC6C25;
+    text-align: center;
+}
+
+.main h2 {
+    margin-bottom: 32px;
+    color: #BC6C25;
+    text-align: center;
+}
+
+.main h3 {
+    margin-bottom: 32px;
+    color: #BC6C25;
+    text-align: center;
+}
+
+.receitas {
+    width: 100%;
+    max-width: 1094px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(33.33% - 16px);
+    width: 100%;
+}
+
+.imagens img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.imagens figcaption {
+    padding-top: 8px;
+}
+
+.imagens a {
+    color: var(--cor-texto);
+    font-size: 16px;
+    transition: 0.2s ease;
+    display: inline-block;
+}
+
+.imagens a:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.03);
+}
+
+/* Final da Estilização das Receitas */
+
+/* Inicio Estilização das Sobremesas */
+
+
+
+.imagens-sobremesas {
+    max-width: 1216px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.imagens-sobremesas a {
+    color: var(--cor-texto);
+    font-size: 16px;
+    transition: 0.2s ease;
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 16px;
+    
+}
+
+.imagens-sobremesas a:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.03);
+}
+
+.imagens-sobremesas p {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+/* Final da Estilização das Sobremesas */
+
+/* Estilização Share-Recipe */
+
+.share-recipe {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0  auto;
+    border: 1px solid var(--cor-primaria);
+    font-weight: 500;
+    color: var(--cor-texto);
+
+}
+
+.container-2row {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.first-block-form {
+
+    max-width: 608px;
+    width: 100%;
+
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.first-block-form input {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.first-block-form input:focus {
+    border: 5px solid var(--footer-hover);
+}
+
+
+
+
+
+.second-block-form {
+
+    max-width: 608px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+
+}
+
+
+
+.second-block-form input {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px;
+    
+}
+
+.second-block-form select {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 7px;
+    
+}
+
+
+.third-block-form {
+    max-width: 1216px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-block-form label {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+
+
+.third-block-form textarea {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-color: var(--cor-primaria);
+    background-color: #fff;
+    padding: 8px;
+    height: 4rem;
+    resize: none;
+    
+}
+
+
+.final-form {
+    display: flex;
+    width: 100%;
+    max-width: 1216px;
+    justify-content: space-between;
+}
+
+.recipe-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 608px;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 608px;
+    width: 100%;
+    color: var(--footer-hover);
+}
+
+.btn input {
+    color: var(--cor-texto);
+    width: 128px;
+    height: auto;
+    padding: 4px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+.btn input:hover {
+    color: var(--cor-texto);
+    width: 128px;
+    height: auto;
+    padding: 4px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    background-color: var(--footer-hover);
+    cursor: pointer;
+}
+
+
+/* Final da Estilização da Share-Recipe */
+
+
+/* Receita 1 */
+
+
+.ingredients li {
+    padding: 8px;
+    margin-bottom: 32px;
+}
+
+/* Finalizacao Receita 1 */
+
+
+
+/* Inicio do Footer */
+
+footer {
+    background-color: var(--cor-texto);
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+footer p {
+    color: var(--cor-fundo);
+    margin: 16px;
+}
+
+footer a {
+    color: var(--cor-secundaria);
+    transition: 0.2s ease;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: var(--footer-hover);
+    transform: scale(1.01);
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Finalizacao do Footer */
+
+
+

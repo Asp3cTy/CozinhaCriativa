@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cozinha Criativa</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        
+
+        <nav>
+          <a href="sobremesas.html">Sobremesas</a>
+          <a href="#">Carnes</a>
+          <a href="#">Massas</a>
+          <a href="#">Bebidas</a>
+          <a href="share-recipe.html">Compartilhar Receita</a>
+        </nav>
+      </section>
+    </header>
+
+    <div class="hero">
+      <section>
+        <img src="images/banner_compartilhar_receita.jpg" alt="" />
+
+        <p>
+          Compartilhe sua Receita Especia! Nesta página, você tem a oportunidade de adicionar a sua própria receita à Cozinha Criativa. Compartilhe seus pratos favotiros e inspire outros entusiastas culinários. Deixe sua marca na comunidade gastronômica, mostrando sua criatividade na cozinha. Compartilhe sua paixão pela culinária com o mundo!
+        </p>
+        <hr />
+      </section>
+    </div>
+
+    <main class="main">
+      <section class="share-form">
+        <h1>Compartilhar Minha Receita</h1>
+        <form action="submit" method="POST">
+
+            <!-- Início Fieldset -->
+            <fieldset class="share-recipe">
+
+            <legend>DADOS DA RECEITA</legend>
+
+            <div class="container-2row">
+                 <!-- Labels e Inputs  -->
+            <div class="first-block-form"> 
+                <label for="recipe-name">Nome da Receita</label>
+                <input type="text" id="recipe-name" name="recipe-name">
+    
+                <label for="prepare-time">Tempo de Preparo</label>
+                <input type="text" id="prepare-time" name="prepare-time">
+    
+                <label for="author-name">Nome do Autor</label>
+                <input type="text" id="author-name" name="author-name"> 
+            </div>
+
+            <div class="second-block-form">
+                            <!-- Select Lists do Form -->
+            <label for="cathegories">Categorias</label>
+            <select name="" id="cathegories">
+                <option value="sobremesas" selected>Sobremesas</option>
+            </select>
+
+            <label for="difficulty">Dificuldade</label>
+            <select name="" id="difficulty">
+                <option value="facil" selected>Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Díficil</option>
+            </select>
+
+            <!-- InputText do AuthorName -->
+
+            <label for="author-email">Email do Autor</label>
+            <input type="email" id="author-email" name="author-email">
+
+            </div>
+            </div>
+
+           
+
+            <!-- Inputs Textareas -->
+            <div class="third-block-form">
+            <label for="ingredient-list">Lista de Ingredientes</label>
+            <textarea name="ingredient-list" id=ingredient-list"></textarea>
+
+            <label for="prepare-mode">Modo de Preparo</label>
+            <textarea name="prepare-mode" id=prepare-mode"></textarea>
+            </div> 
+
+            <div class="final-form">
+                <div class="recipe-thumb">
+                    <label for="recipe-thumb">Thumbnail para Receita</label>
+                    <input type="file" name="recipe-thumb" id="recipe-thumb">
+                </div>
+                <div class="btn">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </div>
+
+
+
+            
+            
+        </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="content">
+        <address>
+          <p>Endereço Fictício, 100, Cidade Fictícia, Estado</p>
+          <p>Email: <a href="mailto:equipe3@web.com">equipe3@web.com</a></p>
+          <p>Telefone: (11) 91234-5678</p>
+          <p>&copy; 2025 Cozinha Criativa. Todos os direitos reservados.</p>
+        </address>
+      </section>
+    </footer>
+  </body>
+</html>

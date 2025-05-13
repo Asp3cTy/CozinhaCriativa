@@ -60,6 +60,7 @@ section {
     max-width: 192px;
     width: 100%;
     height: auto;
+    margin-top: 16px;
 }
 
 .header nav {
@@ -103,8 +104,9 @@ section {
     height: auto;
     margin-top: 32px;
     margin-bottom: 32px;
-
     border-radius: 16px;
+    border-radius: 8px;
+    border: 2px solid var(--cor-secundaria);
 }
 
 .hero video {
@@ -186,6 +188,7 @@ section {
     width: 80%;
     height: auto;
     border-radius: 8px;
+    
 }
 
 .imagens figcaption {
@@ -421,6 +424,7 @@ footer {
     text-align: center;
     padding: 16px;
     margin-top: 32px;
+    border-top: 4px solid var(--cor-secundaria);
 }
 
 footer p {
